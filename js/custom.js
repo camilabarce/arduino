@@ -1,14 +1,14 @@
 //** Código para el header fijo **//
 // Obtén el encabezado
-var header = document.querySelector('.site-header');
+let header = document.querySelector('.site-header');
 
 // Guarda la posición actual de desplazamiento de la página
-var scrollPosition = window.scrollY;
+let scrollPosition = window.scrollY;
 
 // Escucha el evento de desplazamiento de la página
 window.addEventListener('scroll', function() {
     // Obtén la nueva posición de desplazamiento
-    var newScrollPosition = window.scrollY;
+    let newScrollPosition = window.scrollY;
 
     // Compara las posiciones para determinar la dirección del desplazamiento
     if (newScrollPosition > scrollPosition) {
@@ -22,3 +22,8 @@ window.addEventListener('scroll', function() {
     // Actualiza la posición de desplazamiento actual
     scrollPosition = newScrollPosition;
 });
+
+function closeCollapse(id) {
+    var element = document.getElementById(id);
+    $(element).collapse('hide');
+}

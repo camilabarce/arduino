@@ -1,296 +1,594 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Sitio Web de Arduino Trabajo Final para la materia EDI Multimedia">
-        <meta name="author" content="Camila Arce">
 
-        <title>Multimedia | Arduino</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sitio Web de Arduino Trabajo Final para la materia EDI Multimedia">
+    <meta name="author" content="Camila Arce">
 
-        <!-- CSS FILES -->                
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Multimedia | Camila Arce</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
-        
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap"
+        rel="stylesheet">
 
-        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    </head>
-    <body>
-        <main>
-            <!-- Header -->
-            <header class="site-header position-fixed">
-                <div class="container">
-                    <div class="row justify-content-between">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-                        <div class="col-lg-12 col-12 d-flex align-items-center">
-                            <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="#home">
-                                <i class="bi-arrow-up-left"></i>
-                                <span>
-                                    Sitio Arduino
-                                </span>
-                            </a>
-                            <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
-                        </div>
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-                    </div>
-                </div>
-            </header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-            <!-- Navegación -->
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">                
-                <div class="offcanvas-header">                    
-                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                
-                <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#que_es">¿Qué es?</a>
-                            </li>
-                            <li>
-                                <a href="#tipos">Tipos</a>
-                            <li>
-                                <a href="#programacion">Programación</a>
-                            </li>
-                            <li>
-                                <a href="#accesorios">Shield y accesorios</a>
-                            </li>
-                            <li>
-                                <a href="#proyectos">Proyectos</a>
-                            </li>
-                            <li>
-                                <a href="#creditos">Créditos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+    <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
 
-            <!-- Inicio | Home -->
-            <section class="hero-section d-flex justify-content-center align-items-center" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 mx-auto">
-                            <small class="text-white fs-6">Trabajo final para la materia Multimedia</small>
-                            <h1 class="text-white mt-2 mb-4 pb-2">
-                                ¿Qué es Arduino?
-                            </h1>
-                        </div>
-                    </div>
-                </div>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
 
-                <div class="video-wrap">
-                    <video autoplay="true" loop="" muted="" class="custom-video" poster="">
-                        <source src="videos/video.mp4" type="video/mp4">
-                        Tu navegador no soporta la etiqueta de video.
-                    </video>
-                </div>
-            </section>
-
-            <!-- ¿Qué es Arduino? -->
-            <section class="about-section section-padding" id="que_es">
-                <div class="section-overlay"></div>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-12">
-                            <div class="ratio ratio-1x1">
-                                <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                                    <source src="videos\arduino.webm" type="video/mp4">
-                                    Tu navegador no soporta la etiqueta de video.
-                                </video>
-
-                                <div class="about-video-info d-flex flex-column">
-                                    <h4 class="mt-auto">Compañía de desarrollo de software y hardware libres</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
-                            <p class="text-white"><em class="text-white">Arduino</em> es una plataforma electrónica de código abierto que combina hardware y software fácil de usar.</p>
-                            <p class="text-white">Fundado en 2005, Arduino facilita la creación de dispositivos interactivos al permitir que las placas Arduino lean diversas entradas, como sensores de luz o botones, y las conviertan en salidas, como activar motores o encender LEDs.</p>
-                            <p class="text-white">La plataforma utiliza un lenguaje de programación propio basado en <a rel="nofollow" href="https://wiring.org.co/" target="_blank">Wiring</a> y el <a rel="nofollow" href="https://www.arduino.cc/en/software" target="_blank">Software Arduino (IDE)</a>, que se basa en <a rel="nofollow" href="https://processing.org/" target="_blank">Processing.</a>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Tipos de Arduino (Hardware) -->
-            <section class="types-section section-padding" id="tipos">
-                <div class="container">
-                    <!-- Subtitulo tipos de arduino -->
-                    <div class="row">
-                        <div class="mx-auto">
-                            <div class="section-title text-center mb-2 pb-1">
-                                <h2 class="mb-2">Tipos de Arduino</h2>
-                                <p class="text-black">Arduino tiene una gran variedad de placas para diferentes usos</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Tipos | Tarjetas que giran -->
-                    <div class="wrap">
-                        <div class="tarjeta-wrap">
-                            <div class="tarjeta">
-                                <div class="adelante">Arduino Uno</div>
-                                <div class="atras">
-                                    <p>Con 7 pines de alimentación, 14 pines digitales, 6 pines analógicos y más, es la placa más popular y sencilla de utilizar</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tarjeta-wrap">
-                            <div class="tarjeta">
-                                <div class="adelante">Arduino Mega</div>
-                                <div class="atras">
-                                    <p>La más potente de la familia, con 54 pines digitales, 16 entradas analógicas. Se utiliza cuando Arduino Uno no cubre las necesidades de un proyecto, como en impresoras 3D</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tarjeta-wrap">
-                            <div class="tarjeta">
-                                <div class="adelante">Arduino Esplora</div>
-                                <div class="atras">
-                                    <p>Utiliza un microcontrolador Atmega32U4 AVR y puede actuar como un dispositivo cliente USB, como un mouse o un teclado. Ideal para proyectos de interfaz de usuario</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrap">
-                        <div class="tarjeta-wrap">
-                            <div class="tarjeta">
-                                <div class="adelante">Arduino Leonardo</div>
-                                <div class="atras">
-                                    <p>Tiene 20 pines de entrada/salida digital, 12 entradas analógicas, y una conexión micro USB</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tarjeta-wrap">
-                            <div class="tarjeta">
-                                <div class="adelante">Arduino Nano</div>
-                                <div class="atras">
-                                    <p>Es compacto, basado en el microcontrolador ATMega328P, y es adecuado para una variedad de proyectos electrónicos</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- API Programación -->
-            <section class="hero-section d-flex justify-content-center align-items-center" id="programacion">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-12 types-block-wrap">
-                            <h2 class="text-white">API de programación</h2>
-                        </div>
-
-                        <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto types-block-wrap">
-                            <p class="text-white">La <a rel="nofollow" href="https://www.arduino.cc/en/software" target="_blank">API de programación</a> de <em class="text-white">Arduino</em> proporciona un conjunto de funciones y bibliotecas que simplifican el desarrollo de proyectos electrónicos y la programación de microcontroladores en placas Arduino. Diseñada para ser intuitiva y accesible, la API abstrae complejidades técnicas, permitiendo a los desarrolladores centrarse en la lógica de sus proyectos.</p>
-                        </div>
-                    </div>
-                <!-- </div>
-                <div class="video-wrap">
-                    <video autoplay="true" loop="" muted="" class="custom-video video-degradado" poster="">
-                        <source src="videos/bg-programacion.mp4" type="video/mp4">
-                        Tu navegador no soporta la etiqueta de video.
-                    </video>
-                </div> -->
-            </section>
-
-            <!-- Shield y accesorios -->
-            <!-- <section class="section-padding" id="accesorios">
-                <div class="container">
-                    <div class="text-center mb-5">
-                        <h2 class="page-404-title">Shield y accesorios</h2>
-                    </div>
-                </div>
-            </section> -->
-        </main>
-
-        <footer class="site-footer section-padding" id="creditos">
+<body>
+    <main>
+        <!-- Header -->
+        <header class="site-header position-fixed">
             <div class="container">
-                <div class="row mb-5">
-                    <div class="col-lg-5 col-12">
-                        <em class="text-white d-block mb-4">Bibliografía</em>
+                <div class="row justify-content-between">
+
+                    <div class="col-lg-12 col-12 d-flex align-items-center">
+                        <a class="site-header-text d-flex justify-content-center align-items-center me-auto"
+                            href="#home">
+                            <i class="bi-arrow-up-left"></i>
+                            <span>
+                                Página Arduino
+                            </span>
+                        </a>
+                        <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button"
+                            aria-controls="offcanvasMenu"></a>
                     </div>
-                    <p>Sitios utilizados.</p>
+
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-6 col-12 me-auto">
-                        <p class="d-flex text-white">
-                            <strong class="me-2">Materia:</strong>Multimedia
-                        </p>
-                        <p class="d-flex text-white">
-                            <strong class="me-2">Profesor:</strong>Esteban Beato
-                        </p>
-                        <p class="d-flex text-white">
-                            <strong class="me-2">Carrera:</strong>Tecnicatura Superior en Análisis, Desarrollo y Programación de Aplicaciones
-                        </p>
-                        <p class="d-flex text-white">
-                            <strong class="me-2">Alumna:</strong>Camila Arce
-                        </p>
-                        <p class="d-flex text-white">
-                            <strong class="text-white">
-                                <i class="bi-geo-alt me-2"></i>
-                                I.S.F.D y T N° 20, Junín, Buenos Aires
-                                <div class="logo-container">
-                                    <img src="images/logoi20.jpg" alt="" class="img-fluid logo">
-                                </div>
-                            </strong>
-                        </p>
-                        
-                    </div>
-
-                    <div class="col-lg-4 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
-
-                        <p class="d-flex">
-                            <strong class="me-2">Email:</strong>
-
-                            <a href="mailto:arce.b.camila@gmail.com" class="site-footer-link">
-                                arce.b.camila@gmail.com
-                            </a>
-                        </p>
-
-                        <ul class="social-icon mt-4">
-
-                            <li class="social-icon-item">
-                                <a href="https://api.whatsapp.com/send?phone=542364538984" class="social-icon-link bi-whatsapp" target="_blank">
-                                </a>
-                            </li>
-                            <li class="social-icon-item">
-                                <a href="https://www.linkedin.com/in/camilabarce/" class="social-icon-link bi-linkedin" target="_blank">
-                                </a>
-                            </li>
-                            <li class="social-icon-item">
-                                <a href="https://github.com/camilabarce" class="social-icon-link bi-github" target="_blank">
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="col-lg-8 col-12 mt-4">
-                        <p class="copyright-text mb-0">Copyright © Camila Arce 2023</p>
-                    </div>
-                </div>
-
             </div>
-        </footer>
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/countdown.js"></script>
-        <script src="js/init.js"></script>
-        
-        <script src="js/vegas.min.js"></script>
-        <script src="js/custom.js"></script>
-    </body>
+        </header>
+
+        <!-- Navegación -->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu"
+            aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#que_es">¿Qué es?</a>
+                        </li>
+                        <li>
+                            <a href="#tipos">Tipos</a>
+                        <li>
+                            <a href="#programacion">Programación</a>
+                        </li>
+                        <li>
+                            <a href="#accesorios">Shield y Accesorios</a>
+                        </li>
+                        <li>
+                            <a href="#proyectos">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#creditos">Créditos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Inicio | Home -->
+        <section class="hero-section d-flex justify-content-center align-items-center" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 mx-auto">
+                        <small class="text-white fs-6">Trabajo final para la materia Multimedia</small>
+                        <h1 class="text-white mt-2 mb-4 pb-2">
+                            ¿Qué es Arduino?
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-wrap">
+                <video autoplay="true" loop="" muted="" class="custom-video" poster="">
+                    <source src="videos/video.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+        </section>
+
+        <!-- ¿Qué es Arduino? -->
+        <section class="about-section section-padding" id="que_es">
+            <div class="section-overlay"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="ratio ratio-1x1">
+                            <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                                <source src="videos\arduino.webm" type="video/mp4">
+                                Tu navegador no soporta la etiqueta de video.
+                            </video>
+
+                            <div class="about-video-info d-flex flex-column">
+                                <h4 class="mt-auto">Compañía de desarrollo de software y hardware libres</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
+                        <p class="text-white"><em class="text-white">Arduino</em> es una plataforma electrónica de
+                            código abierto que combina hardware y software fácil de usar.</p>
+                        <p class="text-white">Fundado en 2005, Arduino facilita la creación de dispositivos interactivos
+                            al permitir que las placas Arduino lean diversas entradas, como sensores de luz o botones, y
+                            las conviertan en salidas, como activar motores o encender LEDs.</p>
+                        <p class="text-white">La plataforma utiliza un lenguaje de programación propio basado en <a
+                                rel="nofollow" href="https://wiring.org.co/" target="_blank">Wiring</a> y el <a
+                                rel="nofollow" href="https://www.arduino.cc/en/software" target="_blank">Software
+                                Arduino (IDE)</a>, que se basa en <a rel="nofollow" href="https://processing.org/"
+                                target="_blank">Processing.</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Tipos de Arduino (Hardware) -->
+        <section class="types-section section-padding rounded-4" id="tipos">
+            <div class="container">
+                <!-- Subtitulo tipos de arduino -->
+                <div class="row">
+                    <div class="mx-auto">
+                        <div class="section-title text-center mb-2 pb-1">
+                            <h2 class="mb-2">Tipos de Arduino</h2>
+                            <p class="text-black">Arduino tiene una gran variedad de placas para diferentes usos</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tipos | Tarjetas que giran -->
+                <div class="wrap">
+                    <div class="tarjeta-wrap">
+                        <div class="tarjeta">
+                            <div class="adelante">Arduino Uno</div>
+                            <div class="atras">
+                                <p>Con 7 pines de alimentación, 14 pines digitales, 6 pines analógicos y más, es la
+                                    placa más popular y sencilla de utilizar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-wrap">
+                        <div class="tarjeta">
+                            <div class="adelante">Arduino Mega</div>
+                            <div class="atras">
+                                <p>La más potente de la familia, con 54 pines digitales, 16 entradas analógicas. Se
+                                    utiliza cuando Arduino Uno no cubre las necesidades de un proyecto, como en
+                                    impresoras 3D</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-wrap">
+                        <div class="tarjeta">
+                            <div class="adelante">Arduino Esplora</div>
+                            <div class="atras">
+                                <p>Utiliza un microcontrolador Atmega32U4 AVR y puede actuar como un dispositivo cliente
+                                    USB, como un mouse o un teclado. Ideal para proyectos de interfaz de usuario</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="tarjeta-wrap">
+                        <div class="tarjeta">
+                            <div class="adelante">Arduino Leonardo</div>
+                            <div class="atras">
+                                <p>Tiene 20 pines de entrada/salida digital, 12 entradas analógicas, y una conexión
+                                    micro USB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-wrap">
+                        <div class="tarjeta">
+                            <div class="adelante">Arduino Nano</div>
+                            <div class="atras">
+                                <p>Es compacto, basado en el microcontrolador ATMega328P, y es adecuado para una
+                                    variedad de proyectos electrónicos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Programación -->
+        <section class="hero-section d-flex justify-content-center align-items-center" id="programacion">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12 types-block-wrap">
+                        <h2 class="text-white">API de programación</h2>
+                    </div>
+
+                    <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto types-block-wrap">
+                        <p class="text-white">La <a rel="nofollow" href="https://www.arduino.cc/en/software"
+                                target="_blank">API de programación</a> de <em class="text-white">Arduino</em>
+                            proporciona un conjunto de funciones y bibliotecas que simplifican el desarrollo de
+                            proyectos electrónicos y la programación de microcontroladores en placas Arduino. Diseñada
+                            para ser intuitiva y accesible, la API abstrae complejidades técnicas, permitiendo a los
+                            desarrolladores centrarse en la lógica de sus proyectos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-wrap">
+                <video autoplay="true" loop="" muted="" class="custom-video video-degradado" poster="">
+                    <source src="videos/bg-programacion.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+        </section>
+
+        <!-- Shield y accesorios -->
+        <section class="hero-section" id="accesorios">
+            <div class="container">
+                <div class="text-center text-light mb-4">
+                    <h2>Shields y Accesorios</h2>
+                </div>
+                <!-- Accesorios -->
+                <h6 class="text-light font-monospace text-center fs-4 mb-4">Accesorios</h6>
+                <div class="d-flex justify-content-around flex-wrap">
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#cablesJumper" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Cables Jumper
+                        </a>
+                    </p>
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#protoboard" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Protoboard
+                        </a>
+                    </p>
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#fuenteDeAlimentacion"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Fuente de alimentación
+                        </a>
+                    </p>
+                </div>
+                <div class="d-flex gap-5 mx-3 flex-wrap">
+                    <div class="collapse gap-1" id="cablesJumper">
+                        <div class="card card-body bg-dark text-light">
+                            Son cables con conectores macho en ambos extremos, utilizados para conectar componentes
+                            electrónicos entre sí sin necesidad de soldar. Son esenciales para realizar conexiones
+                            en
+                            protoboard y proyectos de Arduino.
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('cablesJumper')"></button>
+                            <img src="./images/cable-jumper.webp" alt="Cable Jumper" class="card-img">
+                        </div>
+                    </div>
+                    <div class="collapse" id="protoboard">
+                        <div class="card card-body bg-dark text-light">
+                            Es una placa de pruebas donde se pueden insertar componentes electrónicos y realizar
+                            conexiones temporales sin necesidad de soldar. Es útil para prototipar circuitos antes
+                            de
+                            implementarlos de forma permanente.
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('protoboard')"></button>
+                            <img src="./images/protoboard.jpg" alt="Protoboard" class="card-img">
+                        </div>
+                    </div>
+                    <div class="collapse" id="fuenteDeAlimentacion">
+                        <div class="card card-body bg-dark text-light">
+                            Proporciona energía eléctrica a los componentes del circuito. Puede ser una batería, un
+                            adaptador de corriente o una batería recargable.
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('fuenteDeAlimentacion')"></button>
+                            <img src="./images/fdealimentacion.webp" alt="Fuente de alimentación" class="card-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Shieds -->
+                <h6 class="text-light font-monospace text-center fs-4 m-4">Shields</h6>
+                <div class="d-flex justify-content-around flex-wrap">
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#ethernet" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Arduino Ethernet
+                        </a>
+                    </p>
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#motor" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Arduino Motor
+                        </a>
+                    </p>
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#wireless" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Arduino Wireless SD
+                        </a>
+                    </p>
+                </div>
+                <div class="d-flex gap-5 mx-3 flex-wrap">
+                    <div class="collapse gap-1" id="ethernet">
+                        <div class="card card-body bg-dark text-light">
+                            Permite a la placa Arduino conectarse a una red Ethernet y utilizarla como un servidor web o
+                            cliente, entre otras funciones de red.
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('ethernet')"></button>
+                            <img src="./images/ethernet.jpg" alt="Shield Ethernet" class="card-img">
+                        </div>
+                    </div>
+                    <div class="collapse" id="motor">
+                        <div class="card card-body bg-dark text-light">
+                            Facilita el control de motores de corriente continua y motores paso a paso con Arduino.
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('motor')"></button>
+                            <img src="./images/motor.jpg" alt="Shield motor" class="card-img">
+                        </div>
+                    </div>
+                    <div class="collapse" id="wireless">
+                        <div class="card card-body bg-dark text-light">
+                            Habilita la comunicación inalámbrica utilizando módulos XBee u otros dispositivos
+                            compatibles con la interfaz SD de Arduino.
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('wireless')"></button>
+                            <img src="./images/wireless.jpg" alt="Shield wireless" class="card-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Sensores -->
+                <h6 class="text-light font-monospace text-center fs-4 m-4">Sensores</h6>
+                <div class="d-flex justify-content-around flex-wrap">
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#temperatura" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Sensor de temperatura y humedad DHT11
+                        </a>
+                    </p>
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#ultrasonidos" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Sensor de distancia por ultrasonidos HC-SR04
+                        </a>
+                    </p>
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#luz" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Sensor de luz LDR
+                        </a>
+                    </p>
+                </div>
+                <div class="d-flex gap-5 mx-3 flex-wrap">
+                    <div class="collapse gap-1" id="temperatura">
+                        <div class="card card-body bg-dark text-light">
+                            Proporciona lecturas de temperatura y humedad relativa del ambiente
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('temperatura')"></button>
+                            <img src="./images/sensor-de-temperatura-y-humedad-dht11-arduino.jpg"
+                                alt="Sensor de temperatura y humedad" class="card-img">
+                        </div>
+                    </div>
+                    <div class="collapse" id="ultrasonidos">
+                        <div class="card card-body bg-dark text-light">
+                            Utiliza ultrasonidos para medir la distancia entre el sensor y un objeto cercano
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('ultrasonidos')"></button>
+                            <img src="./images/sensor-ultrasonido.webp" alt="Sensor de distancia por ultrasonido"
+                                class="card-img">
+                        </div>
+                    </div>
+                    <div class="collapse" id="luz">
+                        <div class="card card-body bg-dark text-light">
+                            Detecta la intensidad de la luz ambiental
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('luz')"></button>
+                            <img src="./images/sensor-ldr.jpg" alt="Sensor de luz LDR" class="card-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Actuadores -->
+                <h6 class="text-light font-monospace text-center fs-4 m-4">Actuadores</h6>
+                <div class="d-flex justify-content-around flex-wrap">
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#corriente" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Motor de corriente continua (DC)
+                        </a>
+                    </p>
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#servomotor" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Servomotor
+                        </a>
+                    </p>
+                    <p class="d-inline-flex">
+                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#led" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            LED
+                        </a>
+                    </p>
+                </div>
+                <div class="d-flex gap-5 mx-3 flex-wrap">
+                    <div class="collapse gap-1" id="corriente">
+                        <div class="card card-body bg-dark text-light">
+                            Convierte la energía eléctrica en movimiento rotativo
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('corriente')"></button>
+                            <img src="images/actuador-corriente.webp" class="card-img">
+                        </div>
+                    </div>
+                    <div class="collapse" id="servomotor">
+                        <div class="card card-body bg-dark text-light">
+                            Un motor que puede girar hacia un ángulo específico controlado por señales PWM (Modulación
+                            por Ancho de Pulso)
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('servomotor')"></button>
+                            <img src="images/actuador-servomotor.png" class="card-img">
+                        </div>
+                    </div>
+                    <div class="collapse" id="led">
+                        <div class="card card-body bg-dark text-light">
+                            Un componente electrónico que emite luz cuando se aplica una corriente eléctrica
+                            <button type="button" class="btn-close close-btn" aria-label="Close"
+                                onclick="closeCollapse('led')"></button>
+                            <img src="images/actuador-led.jpg" class="card-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="section-padding" id="proyectos">
+            <div class="container">
+                <h2 class="text-white d-flex justify-content-center mb-4">Proyectos</h2>
+                <p class="text-white-50">Tres proyectos creativos e innovadores con Arduino, junto con referencias a sitios o tutoriales donde se puede encontrar más información detallada.</p>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-label="Slide 1" aria-current="true"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2" class=""></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 rounded-1"
+                                src="images/proyecto1.jpg" height="575">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-gradient bg-opacity-50 w-auto rounded-1">
+                                <h5 class="text-black"><a href="https://learn.adafruit.com/adafruit-io-air-quality-monitor/overview" target="_blank">Sistema de monitoreo ambiental</a></h5>
+                                <p class="text-white">Este proyecto utiliza Arduino junto con sensores de calidad del aire, temperatura, humedad y otros, para crear un sistema de monitoreo ambiental en tiempo real</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 rounded-1"
+                                src="images/proyecto2.jpg" height="575">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-gradient bg-opacity-50 w-auto rounded-1">
+                                <h5><a href="https://www.instructables.com/Make-Your-Own-POV-LED-Globe/" target="_blank">Globo LED RGB de persistencia de visión (POV)</a></h5>
+                                <p class="text-light">Este proyecto combina un par de piezas de acero con un Arduino, una tira LED APA102 y un sensor de efecto Hall, en él se pueden crear todo tipo de imágenes esféricas o incluso letras</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 rounded-1"
+                                src="images/proyecto3.png" height="575">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-gradient bg-opacity-50 w-auto rounded-1">
+                                <h5><a href="https://hellocircuits.com/2013/11/18/music-controller-glove-by-sunnie-sang-michie-cao/" target="_blank">Guante de control de música</a></h5>
+                                <p class="text-light">Permite controlar la reproducción de música utilizando gestos de la mano, un acelerómetro integrado en el guante detecta los movimientos de la mano y envía señales al Arduino</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer section-padding" id="creditos">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="container">
+                    <em class="text-white d-block mb-4">Bibliografía</em>
+                    <p>Sitios utilizados:</p>
+                    <ul class="list-unstyled d-flex gap-2 flex-wrap">
+                        <li><a href="https://www.arduino.cc/" target="_blank">Arduino.cc</a> |</li>
+                        <li class=""><a href="https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno" target="_blank">Xataka</a> |</li>
+                        <li><a href="https://es.wikipedia.org/wiki/Arduino" target="_blank">Wikipedia</a> |</li>
+                        <li><a href="https://www.adafruit.com/" target="_blank">Adafruit</a> |</li>
+                        <li><a href="https://hellocircuits.com/" target="_blank">HelloCircuits</a> |</li>
+                        <li><a href="https://www.instructables.com/" target="_blank">Instructables</a> |</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-12 me-auto">
+                    <p class="d-flex text-white">
+                        <strong class="me-2">Materia:</strong>Multimedia
+                    </p>
+                    <p class="d-flex text-white">
+                        <strong class="me-2">Profesor:</strong>Esteban Beato
+                    </p>
+                    <p class="d-flex text-white">
+                        <strong class="me-2">Carrera:</strong>Tecnicatura Superior en Análisis, Desarrollo y
+                        Programación de Aplicaciones
+                    </p>
+                    <p class="d-flex text-white">
+                        <strong class="me-2">Alumna:</strong>Camila Arce
+                    </p>
+                    <p class="d-flex text-white">
+                        <strong class="text-white">
+                            <i class="bi-geo-alt me-2"></i>
+                            I.S.F.D. y T. N° 20 Martha Carpaneto, Junín, Buenos Aires
+                            <div class="logo-container">
+                                <img src="images/logoi20.jpg" alt="" class="img-fluid logo">
+                            </div>
+                        </strong>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+
+                    <p class="d-flex">
+                        <strong class="me-2">Email:</strong>
+
+                        <a href="mailto:arce.b.camila@gmail.com" class="site-footer-link">
+                            arce.b.camila@gmail.com
+                        </a>
+                    </p>
+
+                    <ul class="social-icon mt-4">
+
+                        <li class="social-icon-item">
+                            <a href="https://api.whatsapp.com/send?phone=542364538984"
+                                class="social-icon-link bi-whatsapp" target="_blank">
+                            </a>
+                        </li>
+                        <li class="social-icon-item">
+                            <a href="https://www.linkedin.com/in/camilabarce/" class="social-icon-link bi-linkedin"
+                                target="_blank">
+                            </a>
+                        </li>
+                        <li class="social-icon-item">
+                            <a href="https://github.com/camilabarce" class="social-icon-link bi-github" target="_blank">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-8 col-12 mt-4">
+                    <p class="copyright-text mb-0">Desarrollado por Camila Arce | 2024</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

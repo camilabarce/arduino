@@ -86,10 +86,6 @@ body {
 }
 
 /*---------------------------------------
-  ACCESORIOS, SHIELDS, SENSORES, ETC.    
------------------------------------------*/
-
-/*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
 h1,
@@ -589,6 +585,28 @@ strong {
   height: auto; /* Permite mantener la proporción original */
 }
 
+/*---------------------------------------
+  ACCESORIOS, SHIELDS, SENSORES, ETC.    
+-----------------------------------------*/
+.close-btn {
+  background-color: #ececec;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card {
+  width: 320px;
+}
+.card-img {
+  padding-top: 1rem;
+  width: auto;
+  height: auto;
+}
+
+#accesorios {
+  padding-top: 2.5rem;
+}
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
