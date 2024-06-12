@@ -90,7 +90,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-12 mx-auto">
-                        <small class="text-white fs-6">Introducción a Arduino: orígenes, tipos de placas, API de programación y proyectos destacados</small>
+                        <small class="text-white fs-6">Introducción a Arduino: orígenes, tipos de placas, API de
+                            programación y proyectos destacados</small>
                         <h1 class="text-white mt-2 mb-4 pb-2">
                             ¿Qué es Arduino?
                         </h1>
@@ -234,213 +235,187 @@
         </section>
 
         <!-- Shield y accesorios -->
-        <section class="hero-section" id="accesorios">
-            <div class="container">
-                <div class="text-center text-light mb-4">
-                    <h2>Shields y Accesorios</h2>
-                </div>
-                <!-- Accesorios -->
-                <h6 class="text-light font-monospace text-center fs-4 mb-4">Accesorios</h6>
-                <div class="d-flex justify-content-around flex-wrap">
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#cablesJumper" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Cables Jumper
-                        </a>
-                    </p>
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#protoboard" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Protoboard
-                        </a>
-                    </p>
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#fuenteDeAlimentacion"
-                            role="button" aria-expanded="false" aria-controls="collapseExample">
-                            Fuente de alimentación
-                        </a>
-                    </p>
-                </div>
-                <div class="d-flex gap-5 mx-3 flex-wrap">
-                    <div class="collapse gap-1" id="cablesJumper">
-                        <div class="card card-body bg-dark text-light">
-                            Son cables con conectores macho en ambos extremos, utilizados para conectar componentes
-                            electrónicos entre sí sin necesidad de soldar. Son esenciales para realizar conexiones
-                            en
-                            protoboard y proyectos de Arduino.
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('cablesJumper')"></button>
-                            <img src="./images/cable-jumper.webp" alt="Cable Jumper" class="card-img">
-                        </div>
-                    </div>
-                    <div class="collapse" id="protoboard">
-                        <div class="card card-body bg-dark text-light">
-                            Es una placa de pruebas donde se pueden insertar componentes electrónicos y realizar
-                            conexiones temporales sin necesidad de soldar. Es útil para prototipar circuitos antes
-                            de
-                            implementarlos de forma permanente.
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('protoboard')"></button>
-                            <img src="./images/protoboard.jpg" alt="Protoboard" class="card-img">
-                        </div>
-                    </div>
-                    <div class="collapse" id="fuenteDeAlimentacion">
-                        <div class="card card-body bg-dark text-light">
-                            Proporciona energía eléctrica a los componentes del circuito. Puede ser una batería, un
-                            adaptador de corriente o una batería recargable.
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('fuenteDeAlimentacion')"></button>
-                            <img src="./images/fdealimentacion.webp" alt="Fuente de alimentación" class="card-img">
-                        </div>
+        <section class="pt-5 mt-5 pb-5 mb-5" id="accesorios">
+            <div class="text-center text-light mb-4">
+                <h2>Shields y Accesorios</h2>
+            </div>
+            <!-- Accesorios -->
+            <h6 class="text-light font-monospace text-center fs-4 mb-4">Accesorios</h6>
+            <div class="d-flex justify-content-around flex-wrap">
+                <p>
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#cablesJumper" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Cables Jumper
+                    </a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#protoboard" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Protoboard
+                    </a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#fuenteDeAlimentacion"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Fuente de alimentación
+                    </a>
+                </p>
+            </div>
+            <div class="d-flex justify-content-evenly flex-wrap pb-5 mb-5">
+                <div class="" id="cablesJumper">
+                    <div class="card card-body bg-dark text-light">
+                        Son cables con conectores macho en ambos extremos, utilizados para conectar componentes
+                        electrónicos entre sí sin necesidad de soldar. Son esenciales para realizar conexiones
+                        en
+                        protoboard y proyectos de Arduino.
+                        <img src="./images/cable-jumper.webp" alt="Cable Jumper" class="card-img">
                     </div>
                 </div>
-                <!-- Shieds -->
-                <h6 class="text-light font-monospace text-center fs-4 m-4">Shields</h6>
-                <div class="d-flex justify-content-around flex-wrap">
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#ethernet" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Arduino Ethernet
-                        </a>
-                    </p>
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#motor" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Arduino Motor
-                        </a>
-                    </p>
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#wireless" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Arduino Wireless SD
-                        </a>
-                    </p>
-                </div>
-                <div class="d-flex gap-5 mx-3 flex-wrap">
-                    <div class="collapse gap-1" id="ethernet">
-                        <div class="card card-body bg-dark text-light">
-                            Permite a la placa Arduino conectarse a una red Ethernet y utilizarla como un servidor web o
-                            cliente, entre otras funciones de red.
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('ethernet')"></button>
-                            <img src="./images/ethernet.jpg" alt="Shield Ethernet" class="card-img">
-                        </div>
-                    </div>
-                    <div class="collapse" id="motor">
-                        <div class="card card-body bg-dark text-light">
-                            Facilita el control de motores de corriente continua y motores paso a paso con Arduino.
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('motor')"></button>
-                            <img src="./images/motor.jpg" alt="Shield motor" class="card-img">
-                        </div>
-                    </div>
-                    <div class="collapse" id="wireless">
-                        <div class="card card-body bg-dark text-light">
-                            Habilita la comunicación inalámbrica utilizando módulos XBee u otros dispositivos
-                            compatibles con la interfaz SD de Arduino.
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('wireless')"></button>
-                            <img src="./images/wireless.jpg" alt="Shield wireless" class="card-img">
-                        </div>
+                <div class="" id="protoboard">
+                    <div class="card card-body bg-dark text-light">
+                        Es una placa de pruebas donde se pueden insertar componentes electrónicos y realizar
+                        conexiones temporales sin necesidad de soldar. Es útil para prototipar circuitos antes
+                        de
+                        implementarlos de forma permanente.
+                        <img src="./images/protoboard.jpg" alt="Protoboard" class="card-img">
                     </div>
                 </div>
-                <!-- Sensores -->
-                <h6 class="text-light font-monospace text-center fs-4 m-4">Sensores</h6>
-                <div class="d-flex justify-content-around flex-wrap">
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#temperatura" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Sensor de temperatura y humedad DHT11
-                        </a>
-                    </p>
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#ultrasonidos" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Sensor de distancia por ultrasonidos HC-SR04
-                        </a>
-                    </p>
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#luz" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Sensor de luz LDR
-                        </a>
-                    </p>
-                </div>
-                <div class="d-flex gap-5 mx-3 flex-wrap">
-                    <div class="collapse gap-1" id="temperatura">
-                        <div class="card card-body bg-dark text-light">
-                            Proporciona lecturas de temperatura y humedad relativa del ambiente
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('temperatura')"></button>
-                            <img src="./images/sensor-de-temperatura-y-humedad-dht11-arduino.jpg"
-                                alt="Sensor de temperatura y humedad" class="card-img">
-                        </div>
-                    </div>
-                    <div class="collapse" id="ultrasonidos">
-                        <div class="card card-body bg-dark text-light">
-                            Utiliza ultrasonidos para medir la distancia entre el sensor y un objeto cercano
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('ultrasonidos')"></button>
-                            <img src="./images/sensor-ultrasonido.webp" alt="Sensor de distancia por ultrasonido"
-                                class="card-img">
-                        </div>
-                    </div>
-                    <div class="collapse" id="luz">
-                        <div class="card card-body bg-dark text-light">
-                            Detecta la intensidad de la luz ambiental
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('luz')"></button>
-                            <img src="./images/sensor-ldr.jpg" alt="Sensor de luz LDR" class="card-img">
-                        </div>
+                <div class="" id="fuenteDeAlimentacion">
+                    <div class="card card-body bg-dark text-light">
+                        Proporciona energía eléctrica a los componentes del circuito. Puede ser una batería, un
+                        adaptador de corriente o una batería recargable.
+                        <img src="./images/fdealimentacion.webp" alt="Fuente de alimentación" class="card-img">
                     </div>
                 </div>
-                <!-- Actuadores -->
-                <h6 class="text-light font-monospace text-center fs-4 m-4">Actuadores</h6>
-                <div class="d-flex justify-content-around flex-wrap">
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#corriente" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Motor de corriente continua (DC)
-                        </a>
-                    </p>
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#servomotor" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Servomotor
-                        </a>
-                    </p>
-                    <p class="d-inline-flex">
-                        <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#led" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            LED
-                        </a>
-                    </p>
+            </div>
+            <!-- Shieds -->
+            <h6 class="text-light font-monospace text-center fs-4 m-4">Shields</h6>
+            <div class="d-flex justify-content-around flex-wrap">
+                <p class="d-inline-flex">
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#ethernet" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Arduino Ethernet
+                    </a>
+                </p>
+                <p class="d-inline-flex">
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#motor" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Arduino Motor
+                    </a>
+                </p>
+                <p class="d-inline-flex">
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#wireless" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Arduino Wireless SD
+                    </a>
+                </p>
+            </div>
+            <div class="d-flex justify-content-evenly flex-wrap pb-5 mb-5">
+                <div>
+                    <div class="card card-body bg-dark text-light">
+                        Permite a la placa Arduino conectarse a una red Ethernet y utilizarla como un servidor web o
+                        cliente, entre otras funciones de red.
+                        <img src="./images/ethernet.jpg" alt="Shield Ethernet" class="card-img">
+                    </div>
                 </div>
-                <div class="d-flex gap-5 mx-3 flex-wrap">
-                    <div class="collapse gap-1" id="corriente">
-                        <div class="card card-body bg-dark text-light">
-                            Convierte la energía eléctrica en movimiento rotativo
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('corriente')"></button>
-                            <img src="images/actuador-corriente.webp" class="card-img">
-                        </div>
+                <div>
+                    <div class="card card-body bg-dark text-light">
+                        Facilita el control de motores de corriente continua y motores paso a paso con Arduino.
+                        <img src="./images/motor.jpg" alt="Shield motor" class="card-img">
                     </div>
-                    <div class="collapse" id="servomotor">
-                        <div class="card card-body bg-dark text-light">
-                            Un motor que puede girar hacia un ángulo específico controlado por señales PWM (Modulación
-                            por Ancho de Pulso)
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('servomotor')"></button>
-                            <img src="images/actuador-servomotor.png" class="card-img">
-                        </div>
+                </div>
+                <div>
+                    <div class="card card-body bg-dark text-light">
+                        Habilita la comunicación inalámbrica utilizando módulos XBee u otros dispositivos
+                        compatibles con la interfaz SD de Arduino.
+                        <img src="./images/wireless.jpg" alt="Shield wireless" class="card-img">
                     </div>
-                    <div class="collapse" id="led">
-                        <div class="card card-body bg-dark text-light">
-                            Un componente electrónico que emite luz cuando se aplica una corriente eléctrica
-                            <button type="button" class="btn-close close-btn" aria-label="Close"
-                                onclick="closeCollapse('led')"></button>
-                            <img src="images/actuador-led.jpg" class="card-img">
-                        </div>
+                </div>
+            </div>
+            <!-- Sensores -->
+            <h6 class="text-light font-monospace text-center fs-4 m-4">Sensores</h6>
+            <div class="d-flex justify-content-around flex-wrap me-5">
+                <p class="d-inline-flex">
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#temperatura" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Temperatura y humedad DHT11
+                    </a>
+                </p>
+                <p class="d-inline-flex">
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#ultrasonidos" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Distancia por ultrasonidos HC-SR04
+                    </a>
+                </p>
+                <p class="d-inline-flex">
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#luz" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Luz LDR
+                    </a>
+                </p>
+            </div>
+            <div class="d-flex justify-content-around flex-wrap pb-5 mb-5">
+                <div>
+                    <div class="card card-body bg-dark text-light">
+                        Proporciona lecturas de temperatura y humedad relativa del ambiente
+                        <img src="./images/sensor-de-temperatura-y-humedad-dht11-arduino.jpg"
+                            alt="Sensor de temperatura y humedad" class="card-img">
+                    </div>
+                </div>
+                <div>
+                    <div class="card card-body bg-dark text-light">
+                        Utiliza ultrasonidos para medir la distancia entre el sensor y un objeto cercano
+                        <img src="./images/sensor-ultrasonido.webp" alt="Sensor de distancia por ultrasonido"
+                            class="card-img">
+                    </div>
+                </div>
+                <div>
+                    <div class="card card-body bg-dark text-light">
+                        Detecta la intensidad de la luz ambiental
+                        <img src="./images/sensor-ldr.jpg" alt="Sensor de luz LDR" class="card-img">
+                    </div>
+                </div>
+            </div>
+            <!-- Actuadores -->
+            <h6 class="text-light font-monospace text-center fs-4 m-4">Actuadores</h6>
+            <div class="d-flex justify-content-around flex-wrap me-5 gap-5">
+                <p>
+                    <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#corriente" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Motor de corriente continua (DC)
+                    </a>
+                </p>
+                <p class="me-5">
+                    <a class="btn btn-outline-light me-5" data-bs-toggle="collapse" href="#servomotor" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Servomotor
+                    </a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-light me-5" data-bs-toggle="collapse" href="#led" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        LED
+                    </a>
+                </p>
+            </div>
+            <div class="d-flex justify-content-evenly flex-wrap">
+                <div>
+                    <div class="card card-body bg-dark text-light">
+                        Convierte la energía eléctrica en movimiento rotativo
+                        <img src="images/actuador-corriente.webp" class="card-img">
+                    </div>
+                </div>
+                <div>
+                    <div class="card card-body bg-dark text-light">
+                        Un motor que puede girar hacia un ángulo específico controlado por señales PWM (Modulación
+                        por Ancho de Pulso)
+                        <img src="images/actuador-servomotor.png" class="card-img">
+                    </div>
+                </div>
+                <div>
+                    <div class="card card-body bg-dark text-light">
+                        Un componente electrónico que emite luz cuando se aplica una corriente eléctrica
+                        <img src="images/actuador-led.jpg" class="card-img">
                     </div>
                 </div>
             </div>
@@ -535,18 +510,21 @@
             </div>
             <div class="row pb-5">
                 <div class="col-lg-9">
-                    <p class="d-flex text-white">Trabajo final para la materia <strong class="ps-1 pe-1"> Multimedia</strong> del año 2024</p>
-                    <p class="d-flex text-white">De la carrera <strong class="ps-1">Tecnicatura Superior en Análisis, Desarrollo y Programación de Aplicaciones</strong></p>
+                    <p class="d-flex text-white">Trabajo final para la materia <strong class="ps-1 pe-1">
+                            Multimedia</strong> del año 2024</p>
+                    <p class="d-flex text-white">De la carrera <strong class="ps-1">Tecnicatura Superior en Análisis,
+                            Desarrollo y Programación de Aplicaciones</strong></p>
                     <p class="d-flex text-white">A cargo del profesor<strong class="ps-1">Esteban Beato</strong></p>
                     <div class="d-flex flex gap-3">
-                        <p class="text-white align-self-center"><strong>I.S.F.D. y T. N° 20 Martha Carpaneto, Junín, Buenos Aires</strong></p>
+                        <p class="text-white align-self-center"><strong>I.S.F.D. y T. N° 20 Martha Carpaneto, Junín,
+                                Buenos Aires</strong></p>
                         <div class="logo-container">
                             <img src="images/logoi20.jpg" alt="" class="img-fluid logo rounded-1">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <p class="d-flex text-white">Desarrollado por <strong class="ps-1">Camila Arce</strong></p>
+                    <p class="d-flex text-white">Desarrollado por <strong class="ps">Camila Arce</strong></p>
                     <p class="d-flex">
                         <strong class="me-2">Email:</strong>
 

@@ -574,10 +574,6 @@ strong {
 /*---------------------------------------
   FOOTER | CRÉDITOS
 -----------------------------------------*/
-#creditos>p{
-  font-size: .9rem;
-}
-
 .logo-container {
   display: inline-block;
   vertical-align: middle;

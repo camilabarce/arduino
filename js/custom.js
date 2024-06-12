@@ -22,8 +22,3 @@ window.addEventListener('scroll', function() {
     // Actualiza la posición de desplazamiento actual
     scrollPosition = newScrollPosition;
 });
-
-function closeCollapse(id) {
-    var element = document.getElementById(id);
-    $(element).collapse('hide');
-}
