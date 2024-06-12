@@ -574,15 +574,19 @@ strong {
 /*---------------------------------------
   FOOTER | CRÉDITOS
 -----------------------------------------*/
+#creditos>p{
+  font-size: .9rem;
+}
+
 .logo-container {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 5px; /* Espacio entre el icono y el logo */
+  margin-left: 5px; 
 }
 
 .logo {
-  width: 30px; /* Ajusta el tamaño según tus necesidades */
-  height: auto; /* Permite mantener la proporción original */
+  width: 3.5rem; 
+  height: auto; 
 }
 
 /*---------------------------------------
